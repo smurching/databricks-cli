@@ -63,7 +63,7 @@ class ApiClient(object):
     to be used by different versions of the client.
     """
     def __init__(self, user = None, password = None, host = None, token = None,
-                 apiVersion = version.API_VERSION, default_headers = {}, verify = True):
+                 apiVersion = version.API_VERSION, default_headers = {}, verify = False):
         if host[-1] == "/":
             host = host[:-1]
 
